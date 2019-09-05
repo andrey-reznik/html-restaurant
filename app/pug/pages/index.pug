@@ -4,3 +4,72 @@ block variables
     - var title = 'Главная'
 
 block content
+    section.about
+        .container
+            .row
+                +b.content
+                    +e.H2.title= content.About.title
+                    +e.IMG(src= content.About.decoration_img).decoration
+                    +e.P.description= content.About.description
+                    +e.IMG(src= content.About.cook_img).cook
+                +b.content-image
+                    +e.IMG(src= content.About.dish_img).dish
+
+    section.ingredients
+        .container
+            .row
+                +b.ARTICLE.fine-ingredients
+                    +e.H2.title= content.Ingredients.title
+                    +e.IMG(src= content.Ingredients.decoration).decoration
+                    +e.description= content.Ingredients.description
+                    +b.ingredient-container
+                        each ingredient_img in content.Ingredients.items
+                            +e.IMG(src=ingredient_img).ingredient
+
+    section.dishes-menu
+        .container
+            .row
+                each dish in content.Menu.dishes
+                    +b.ARTICLE.dish-category
+                        +e.H2.title= dish.name 
+                        +e.IMG(src= content.Menu.decoration).decoration
+                        +b.dishes
+                            each sub_dish in dish.dishes
+                                if sub_dish.is_special
+                                    +b.dish-item._special
+                                        +e.header
+                                            +e.P.special= content.Menu.special_text
+                                            +e.P.name= sub_dish.name
+                                            +e.P.price= sub_dish.price
+                                        +e.footer
+                                            +e.P.description= sub_dish.description
+                                else
+                                    +b.dish-item
+                                        +e.header
+                                            +e.P.name= sub_dish.name
+                                            +e.P.price= sub_dish.price
+                                        +e.footer
+                                            +e.P.description= sub_dish.description
+
+    section.reviews
+        .container
+            .row
+                +b.ARTICLE.review
+                    +e.H2.title= content.Reviews.title
+                    +e.IMG(src= content.Reviews.decoration).decoration
+                    +e.quote
+                    +e.P.text= content.Reviews.text
+                    +e.P.author= content.Reviews.author
+
+    section.reservations
+        .container
+            .row
+                +b.dish-previews
+                    each preview in content.Reservations.previews
+                        +e.IMG(src= preview.img).item
+
+                +b.reserve
+                    +e.H2.title
+                    +e.IMG(src= "").decoration
+                    +e.P.description
+                    +b.FORM(action= "" method= "POST").form

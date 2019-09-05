@@ -1,8 +1,52 @@
 {
   "navPages": {
-    "main": {
-      "title": "Home",
-      "link": "/"
-    }
+    "menu_items": [
+      {
+        "title": "Home",
+        "active": true,
+        "link": "#"
+      },
+      {
+        "title": "About",
+        "active": false,
+        "link": "#"
+      },
+      {
+        "title": "Igredients",
+        "active": false,
+        "link": "#"
+      },
+      {
+        "title": "Menu",
+        "active": false,
+        "link": "#"
+      },
+      {
+        "title": "Reviews",
+        "active": false,
+        "link": "#"
+      },
+      {
+        "title": "Reservations",
+        "active": false,
+        "link": "#"
+      }
+    ],
+    "menu_soc_icons": [
+      {
+        "title": "",
+        "link": "#",
+        "class": "fab fa-twitter"
+      },
+      {
+        "title": "",
+        "link": "#",
+        "class": "fab fa-youtube"
+      },      {
+        "title": "",
+        "link": "#",
+        "class": "fab fa-facebook"
+      }
+    ]
   }
 }

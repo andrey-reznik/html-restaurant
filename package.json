@@ -11,7 +11,7 @@
     "bootstrap3": "^3.3.5",
     "browser-sync": "^2.18.13",
     "del": "^3.0.0",
-    "gulp": "gulpjs/gulp#4.0",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-cheerio": "^0.6.3",
     "gulp-clean-css": "^3.9.0",
@@ -35,5 +35,8 @@
     "require-reload": "^0.2.2",
     "smart-grid": "^2.0.1",
     "stylus-px2rem": "^1.0.14"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.9.0"
   }
 }

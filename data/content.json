@@ -1,6 +1,146 @@
 {
   "Home": {
-    "title": "Article",
-    "content": "Article content"
+    "tagline": "the right ingredients<br>for the right food",
+    "buttons": {
+      "book": {
+        "link": "#",
+        "text": "BOOK A TABLE"
+      },
+      "menu": {
+        "link": "#",
+        "text": "SEE THE MENU"
+      }
+    }
+  },
+  "About": {
+    "title": "Just the right food",
+    "decoration_img": "/img/decororation_gold.png",
+    "description": "If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!",
+    "cook_img": "/img/cook.png",
+    "dish_img": "/img/dish.png"
+  },
+  "Ingredients": {
+    "title": "Fine ingredients",
+    "decoration": "/img/divider.png",
+    "description": "If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!",
+    "items": [
+      "/img/spike.png",
+      "/img/cinnamon.png",
+      "/img/bread.png"
+    ]
+  },
+  "Menu": {
+    "decoration": "/img/decoration_gold.png",
+    "special_text": "special",
+    "dishes": [
+      {
+        "name": "Appetisers",
+        "dishes": [
+          {
+            "name": "Tzatsiki",
+            "price": "$3.99",
+            "description": "Refreshing traditional cucumber and garlic yoghurt dip.",
+            "is_special": false
+          },
+          {
+            "name": "Aubergine Salad",
+            "price": "$5.50",
+            "description": "Pureed eggplant, garlic, green pepper and tomato dip.",
+            "is_special": false
+          },
+          {
+            "name": "Aubergine Salad",
+            "price": "$5.25",
+            "description": "Pureed eggplant, garlic, green pepper and tomato dip.",
+            "is_special": false
+          }
+        ]
+      },
+      {
+        "name": "Starters",
+        "dishes": [
+          {
+            "name": "Haloumi",
+            "price": "$3.99",
+            "description": "Refreshing traditional cucumber and garlic yoghurt dip.",
+            "is_special": false
+          },
+          {
+            "name": "Spinach Pie",
+            "price": "$5.50",
+            "description": "Pureed eggplant, garlic, green pepper and tomato dip.",
+            "is_special": false
+          }
+        ]
+      },
+      {
+        "name": "Salads",
+        "dishes": [
+          {
+            "name": "Olive Special",
+            "price": "$5.99",
+            "description": "Refreshing traditional cucumber and garlic yoghurt dip.",
+            "is_special": false
+          },
+          {
+            "name": "Greek Salad",
+            "price": "$5.50",
+            "description": "Pureed eggplant, garlic, green pepper and tomato dip.",
+            "is_special": true
+          },
+          {
+            "name": "Gusto Salad",
+            "price": "$5.25",
+            "description": "Pureed eggplant, garlic, green pepper and tomato dip.",
+            "is_special": false
+          }
+        ]
+      },
+      {
+        "name": "Main Dishes",
+        "dishes": [
+          {
+            "name": "Cornish Mackerel",
+            "price": "$5.99",
+            "description": "Refreshing traditional cucumber and garlic yoghurt dip.",
+            "is_special": false
+          },
+          {
+            "name": "Roast Lamb ",
+            "price": "$5.50",
+            "description": "Pureed eggplant, garlic, green pepper and tomato dip.",
+            "is_special": true
+          },
+          {
+            "name": "Fried Chicken",
+            "price": "$5.25",
+            "description": "Pureed eggplant, garlic, green pepper and tomato dip.",
+            "is_special": false
+          },
+          {
+            "name": "Pastitsio",
+            "price": "$5.99",
+            "description": "Refreshing traditional cucumber and garlic yoghurt dip.",
+            "is_special": false
+          }
+        ]
+      }
+    ]
+  },
+  "Reviews": {
+    "title": "Guest Reviews",
+    "decoration": "/img/divider.png",
+    "text": "If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!",
+    "author": "- food inc, New York"
+  },
+  "Reservations": {
+    "previews": [
+      {
+        "img": "/img/porridge.jpg"
+      },
+      {
+        "img": "/img/muesli.jpg"
+      }
+    ]
   }
 }

@@ -1,0 +1,27 @@
+header.header
+    .container
+        nav.navbar
+            +b.logo
+                +e.IMG(src= "/img/logo.png").image
+            +b.UL.menu
+                each menu_item in nav.navPages.menu_items
+                    if !menu_item.active
+                        +e.LI.item
+                            a(href= menu_item.link)= menu_item.title
+                    else
+                        +e.LI.item.active
+                            a(href= menu_item.link)= menu_item.title
+
+            +b.UL.icons
+                each soc_icon in nav.navPages.menu_soc_icons
+                    +e.LI.item
+                        a(href= soc_icon.link)
+                            i(class= soc_icon.class)
+        +b.tagline
+            +e.H1.text!= content.Home.tagline
+        +b.decoration-menu
+            +e.img(src= "/img/decoration_home.png").image
+
+        +b.actions
+            +e.A(href= content.Home.buttons.book.link).button._dark= content.Home.buttons.book.text
+            +e.A(href= content.Home.buttons.menu.link).button._light= content.Home.buttons.menu.text

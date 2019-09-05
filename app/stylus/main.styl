@@ -6,3 +6,309 @@
 @import "utils/keyframes.styl"
 @import "utils/grid.styl"
 @import "utils/media.styl"
+
+reset()
+
+a
+  text-decoration: none
+
+.header
+  background: url("/img/menu_bg.png") top center no-repeat, url("/img/fruit.jpg") center center no-repeat
+  background-size: cover
+  height: 747px
+  wrapper-full()
+.row
+  row-flex()
+
+.container
+  wrapper()
+
+.navbar
+  row-flex()
+
+.active
+  height: 3px
+  background: #ffffff
+
+.logo
+  col()
+  size-xl(3)
+  position: relative
+  margin-top: 8px
+  &__image
+    width: 154px
+    height: 92px
+  &__text
+    position: absolute
+    margin-top: 0
+    margin-left: 0
+
+.menu
+  col()
+  size-xl(7)
+  row-flex()
+  margin-left: auto
+  &__item
+    margin-right: 25px
+    font-family: "Gentium Book Basic"
+    font-size: 21px
+    font-weight: 700
+    line-height: 100px
+    a
+      color: #ffffff
+    &:nth-last-child
+      margin: 0
+
+.icons
+  col()
+  size-xl(2)
+  row-flex()
+  line-height: 100px
+  a
+    color: #dab33e
+    margin-right: 10px
+    margin-left 10px
+    transition: .3s ease
+    &:hover
+      color: #bb8f35
+
+.tagline
+  row-flex()
+  justify-content: center;
+  margin-top: 140px
+  &__text
+    text-align: center
+    opacity: 0.92
+    text-shadow: 1px 1px 2px rgba(1, 1, 1, 0.64)
+    color: #ffffff
+    font-family: "Yeseva One"
+    font-size: 90px
+    font-weight: 400
+
+.decoration-menu
+  row-flex()
+  justify-content: center
+  margin-top: 34px
+
+.actions
+  row-flex()
+  justify-content: center
+  col()
+  size-xl(12)
+
+// Buttons
+.actions
+  margin-top: 34px
+  box-sizing: border-box
+  &__button
+    border: 2px solid
+    padding: 23px 52px
+    color: #ffffff
+    transition: .4s ease
+    &:first-child
+      margin-right: 30px
+    &_dark
+      background: rgba(0, 0, 0, .8)
+      border-color: #000000
+      &:hover
+        background: rgba(0, 0, 0, 1)
+    &_light
+      background: rgba(255, 255, 255, .2)
+      border-color: #ffffff
+      &:hover
+        background: rgba(230, 230, 230, 1)
+        color: #000000
+
+.about
+  padding 100px 0 100px 0
+  background: url("/img/pattern.jpg") center center no-repeat
+  background-size: cover
+  .content
+    col()
+    size-xs(12)
+    size-lg(6)
+    text-align: center;
+    display: flex
+    flex-direction column
+    justify-content: center;
+    align-items center
+    &__title
+      color: #cc9900
+      font-family: "Yeseva One"
+      font-size: 36px
+      font-weight: 400
+    &__decoration
+      margin: 15px 0 30px 0
+      width 247px
+    &__description
+      color #4c4c4c
+      font-family Lato
+      font-size 16px
+      font-weight 400
+      text-align center
+      margin-bottom: 40px
+      width: 410px
+    &__cook
+      margin-left: 80px
+      width 219px
+  .content-image
+    col()
+    size-xs(12)
+    size-lg(6)
+    margin-top: -30px
+.ingredients
+  background: url("/img/greenery.jpg") center center no-repeat
+  background-size: cover
+  padding: 100px
+  .fine-ingredients
+    col()
+    size-xl(6)
+    padding: 80px
+    background: rgba(0, 0, 0, .7) center center
+    text-align center
+    shift-left(6)
+    &__title
+      color #ffffff
+      font-family "Yeseva One"
+      font-size 36px
+      font-weight 400
+    &__decoration
+      margin-top: 15px
+      margin-bottom: 30px
+    &__description
+      color #ffffff
+      font-family Lato
+      font-size 16px
+      font-weight 400
+      line-height 24px
+    .ingredient-container
+      margin-top: 70px
+      display: flex
+      flex-direction row
+      flex-wrap nowrap
+      justify-content: space-between
+      &__ingredient
+        margin-right: 30px
+        &:last-child
+          margin-right: 0
+
+.dishes-menu
+  background: url("/img/menu_pattern.jpg") center center no-repeat
+  background-size: cover
+  padding-bottom 100px
+  padding-top 100px
+  .dish-category
+    col()
+    size-xl(4)
+    shift-xl(1)
+    display flex
+    flex-direction column
+    align-items center
+    margin-bottom 70px
+    &__title
+      color: #cc9900
+      font-family: "Yeseva One"
+      font-size: 36px
+      font-weight: 400
+      line-height: 24px
+      text-align center
+    &__decoration
+      margin-top 22px
+      margin-bottom 30px
+      width 247px
+      height 24px
+    &:last-child, :nth-last-child(2)
+      margin-bottom 0
+  .dishes
+    .dish-item
+      border: 1px solid transparent
+      padding: 2px 12px 12px 12px
+      &_special
+        border-color: #c89f2d
+        position relative
+      &__special
+        display block
+        background: url("/img/special_bg.png") center center no-repeat
+        position absolute
+        color #ffffff
+        text-transform capitalize
+        padding 6px 13px
+        position absolute
+        top -27px
+        right -3px
+      &__header
+        display flex
+        flex-direction row
+        justify-content space-between
+        border-bottom 1px solid #c89f2d
+        padding-bottom 8px
+        margin-bottom 8px
+      &__name, &__price
+        font-weight: 400
+        line-height: 24px
+        font-size: 21px
+        color: #c89f2d
+        font-family: "Yeseva One"
+      &__description
+        font-family: "Lato"
+        font-weight: 400
+
+.reviews
+  background: url("/img/barbecue.jpg") center center no-repeat
+  background-size: cover
+  padding 100px 0
+  color #ffffff
+  .review
+    col()
+    size-xl(8)
+    shift-xl(2)
+    text-align center
+    background: rgba(0, 0, 0, .7) center center
+    padding 74px 74px
+    &__title
+      font-family "Yeseva One"
+      font-size 36px
+      font-weight 400
+    &__decoration
+      margin-top 23px
+      margin-bottom 30px
+    &__text
+      color #dde0df
+      font-family "Gentium Book Basic"
+      font-size 25px
+      font-weight 700
+      line-height 45px
+      position relative
+      &:before
+        content: "“"
+        position absolute
+        color #f2f4f4
+        font-family Georgia
+        font-size 96px
+        font-weight 400
+        line-height 45px
+        left -25px
+        top 10px
+        opacity .6
+    &__author
+      font-family Lato
+      font-size 18px
+      font-weight 400
+      margin-top 50px
+
+.reservations
+  padding 100px 0
+  background url("/img/pattern.jpg")
+  .dish-previews
+    col()
+    size-xl(6)
+    &__item
+      margin-right 30px
+      &:last-child
+        margin-right 0
+  
+  .reserve
+    col()
+    size-xl(4)
+    shift-xl(1)
+    
